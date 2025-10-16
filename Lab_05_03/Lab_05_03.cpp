@@ -41,7 +41,7 @@ double f(const double x)
         do
         {
             n++;
-            double R = pow(x, 4 * n + 1) / ((4 * n + 1) * (4 * n + 1 - 1) * (4 * n + 1 - 2) * (4 * n + 1 - 3));
+            double R = pow(x, 4 * n + 1) / ((4 * n + 1) * (4 * n) * (4 * n - 1) * (4 * n - 2));
             a *= R;
             S += a;
         } while (n < 6);
